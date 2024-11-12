@@ -23,6 +23,7 @@ Next.js : Framework de développement web pour une expérience rapide et moderne
 TypeScript : Typage statique pour une meilleure maintenabilité.
 NextUI : Composants d'interface utilisateur pour un design épuré et réactif.
 CSS (incluant Tailwind) : Personnalisation des styles pour une interface élégante et professionnelle.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
