@@ -1,3 +1,28 @@
+Imagin'et Vous - Site de Conseil en Image Personnelle
+
+Bienvenue dans le dépôt GitHub du site Imagin'et Vous, un site professionnel de conseil en image personnelle. Ce projet est conçu pour offrir une présentation élégante et intuitive des services de conseil en image, permettant aux clients de découvrir les prestations et de s'informer sur les bénéfices d'un accompagnement personnalisé.
+
+Aperçu du Projet
+Le site Imagin'et Vous met en avant les services d'accompagnement en image, incluant :
+
+Colorimétrie : Découverte des couleurs qui mettent en valeur chaque individu.
+Analyse Morphologique : Étude des proportions corporelles pour une silhouette harmonieuse.
+Analyse de Style : Adaptation du style vestimentaire pour refléter la personnalité et l’identité unique.
+Analyse de Dressing : Organisation de la garde-robe pour une efficacité et un style optimal au quotidien.
+
+Objectifs du Projet
+Ce site vise à :
+
+Inspirer confiance et mettre en valeur l'expertise en conseil en image.
+Faciliter la navigation avec une présentation simple, où chaque prestation est accessible en un clic.
+Donner aux clients potentiels des informations claires sur chaque service proposé.
+Encourager les interactions, notamment par la prise de rendez-vous et la lecture des témoignages clients.
+
+Technologies Utilisées
+Next.js : Framework de développement web pour une expérience rapide et moderne.
+TypeScript : Typage statique pour une meilleure maintenabilité.
+NextUI : Composants d'interface utilisateur pour un design épuré et réactif.
+CSS (incluant Tailwind) : Personnalisation des styles pour une interface élégante et professionnelle.
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
