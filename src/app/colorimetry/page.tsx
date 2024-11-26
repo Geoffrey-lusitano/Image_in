@@ -1,27 +1,72 @@
 export default function Colorimetry() {
-    return (
-      <section>
-        <h1>Colorimétrie</h1>
-        <p>Véritable outil de révélation de soi, la colorimétrie est conçu pour vous aider à découvrir les teintes qui vous subliment et à les intégrer dans votre quotidien.
+  return (
+    <section className="relative bg-white py-16">
+      {/* Container */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-8 md:px-16">
+        {/* Left Section: Text */}
+        <div className="flex flex-col justify-center space-y-6">
+          <h1 className="title text-4xl md:text-5xl font-bold leading-tight">
+            Colorimétrie
+          </h1>
+          <p className="text text-lg md:text-xl text-gray-700">
+            Véritable outil de révélation de soi, la colorimétrie est conçue
+            pour vous aider à découvrir les teintes qui vous subliment et à les
+            intégrer dans votre quotidien.
+          </p>
+          <p className="text text-lg md:text-xl text-gray-700">
+            La colorimétrie est l'art de choisir les couleurs qui vous mettent
+            le plus en valeur en fonction de votre teint, de vos cheveux et de
+            vos yeux. En identifiant votre palette de couleurs personnelles,
+            nous vous aidons à créer un style qui flatte votre apparence et
+            reflète aussi votre personnalité unique.
+          </p>
+          <h2 className="subtitle text-2xl font-semibold text-gray-800">
+            Ce que nous offrons :
+          </h2>
+          <ul className="list-disc pl-6 text-lg md:text-xl text-gray-700 space-y-2">
+            <li>
+              Analyse personnalisée des couleurs : Grâce à des techniques
+              professionnelles, nous déterminons les nuances qui vous
+              conviennent le mieux.
+            </li>
+            <li>
+              Conseils adaptés aux occasions et aux saisons : Nos
+              recommandations vous aident à choisir des couleurs pour toutes les
+              situations.
+            </li>
+            <li>
+              Réajustement de dressing : Nous vous aidons à réorganiser votre
+              garde-robe en fonction de votre palette de couleurs afin de
+              maximiser votre potentiel stylistique.
+            </li>
+          </ul>
+          <p className="text text-lg md:text-xl text-gray-700">
+            Avec une approche professionnelle et personnalisée, nous nous
+            engageons à vous offrir un service de colorimétrie qui dépasse vos
+            attentes. Investir dans la colorimétrie, c'est investir dans une
+            version plus épanouie de vous-même.
+          </p>
+        </div>
 
-La colorimétrie est l'art de choisir les couleurs qui vous mettent le plus en valeur en fonction de votre teint, de vos cheveux, de vos yeux.
-En identifiant votre palette de couleurs personnelles, nous vous aidons à créer un style qui flatte votre apparence mais reflète aussi votre personnalité unique.
+        {/* Right Section: Images */}
+        <div className="flex flex-col justify-around h-full space-y-6 lg:space-y-0">
+          {/* First Image */}
+          <div
+            className="w-full h-[200px] md:h-[300px] lg:h-[350px] bg-cover bg-center shadow-lg"
+            style={{
+              backgroundImage: "url('/assets/clothes-1839935_1920.jpg')",
+            }}
+          ></div>
 
-Ce que nous offrons :
-
-Analyse personnalisée des couleurs : grace à des techniques professionnelles, nous déterminons les nuances qui vous conviennent le mieux.
-
-Conseils adaptés aux occasions et aux saisons, nos recommandations vous aident à choisir des couleurs pour toutes les situations.
-
-Réajustement de dressing : Nous vous aidons à réorganiser votre garde-robe en fonction de votre palette de couleurs afin de maximiser votre potentiel stylistique.
-
-Pourquoi choisir Image' In et Vous ?
-
-Avec une approche professionelle et personnalisée, nous nous engageons à vous offrir un service de colorimétrie qui dépasse vos attentes. Nos conseils sont basés sur une analyse approfondie de vos caractéristiques uniques et nous nous efforçons de rendre chaque séance aussi agréable qu'efficace.
-Investir dans la colorimétrie, c'est investir dans une version plus épanouie de vous-même.
-Allons ensemble vers les couleurs qui feront ressortir le meilleur de vous et transformez votre style en un reflet parfait de votre beauté naturelle.
-Prenez rendez-vous dès aujourd'hui pour commencer votre voyage vers une apparence éblouissante et une confiance inébranlable !</p>
-        {/* Ajoute le contenu spécifique de cette prestation ici */}
-      </section>
-    );
-  }
+          {/* Second Image */}
+          <div
+            className="w-full h-[200px] md:h-[300px] lg:h-[350px] bg-cover bg-center shadow-lg"
+            style={{
+              backgroundImage: "url('/assets/fabric-1490513_1920.jpg')",
+            }}
+          ></div>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -4,6 +4,9 @@
 
 @import "tailwindcss/utilities";
 
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -20,4 +23,40 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Utilisation de Playfair Display pour les titres */
+.title {
+  font-family: var(--font-playfair);
+}
+
+/* Utilisation de Montserrat pour le texte principal */
+.text {
+  font-family: var(--font-montserrat);
+}
+
+/* Utilisation de Libre Baskerville pour les sous-titres */
+.subtitle {
+  font-family: var(--font-libre-baskerville);
+}
+:where(h1, h2, h3, h4, h5, h6, a) {
+  @apply title;
+}
+:where(p, ) {
+  @apply text;
+}
+
+.border-animation::after {
+  content: ""; /* Nécessaire pour les pseudo-éléments */
+  position: absolute;
+  bottom: 0; /* Place la bordure en bas */
+  left: 0; /* Commence à gauche */
+  height: 2px; /* Épaisseur de la bordure */
+  width: 0; /* Commence à 0 pour l'animation */
+  background-color: #3490dc; /* Couleur de la bordure, ici en bleu (remplacez avec la couleur souhaitée) */
+  transition: width 0.3s ease; /* Animation de l'augmentation de la largeur */
+}
+
+.border-animation:hover::after {
+  width: 100%; /* La largeur s'étend sur tout l'élément au survol */
 }
