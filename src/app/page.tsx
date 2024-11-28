@@ -5,26 +5,29 @@ export default function Home() {
       style={{ backgroundImage: "url('/assets/clothes-1839935_1920.jpg')" }}
     >
       {/* Overlay for darkening the background image */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
-      {/* Text container */}
-      <div className="relative flex items-center h-full px-8 md:px-16 text-white">
-        {/* Left-aligned Title (1/3 width) */}
-        <div className="w-1/3">
-          <h1 className="title text-4xl md:text-6xl lg:text-7xl font-bold">
+      {/* Content */}
+      <div className="relative flex flex-col items-center justify-center h-full px-8 md:px-16 text-white text-center space-y-8">
+        {/* Company Name */}
+        <h1 className="text-5xl md:text-7xl font-bold tracking-wide">
+          Imagin'et Vous
+        </h1>
+
+        {/* Text Container with Blur Effect */}
+        <div className="relative bg-gray-900 bg-opacity-60 backdrop-blur-md rounded-lg p-6 md:p-10 shadow-lg">
+          {/* Title */}
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold mb-6">
             Analyse de votre style actuel
-          </h1>
-        </div>
+          </h2>
 
-        {/* Right-aligned Text (2/3 width) */}
-        <div className="w-2/3 text-right">
-          <p className="text text-lg md:text-xl">
+          {/* Description */}
+          <p className="max-w-3xl text-lg md:text-xl leading-relaxed">
             Nous identifions vos préférences vestimentaires, couleurs et pièces
-            clés de votre garde-robe. Conseils pour améliorer ou affirmer votre
-            style : Que vous vouliez adopter un style plus moderne, plus affirmé
-            ou retourner au naturel, nous vous accompagnons dans le choix de
-            vêtements et accessoires qui correspondent à votre futur tel que
-            vous le voulez.
+            clés de votre garde-robe. Que vous vouliez adopter un style plus
+            moderne, plus affirmé ou retourner au naturel, nous vous
+            accompagnons dans le choix de vêtements et accessoires qui
+            correspondent à votre futur tel que vous le voulez.
           </p>
         </div>
       </div>

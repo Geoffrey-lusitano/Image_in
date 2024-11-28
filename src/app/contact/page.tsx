@@ -1,3 +1,7 @@
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { IoLocationSharp } from "react-icons/io5";
+
 export default function Contact() {
   return (
     <section className="bg-gray-50 py-16 px-8 md:px-16">
@@ -22,7 +26,7 @@ export default function Contact() {
           <div className="space-y-4">
             <div className="flex items-center space-x-4">
               <span className="bg-primary-800 text-white p-3 rounded-full">
-                📞
+                <FaPhone />
               </span>
               <div>
                 <h3 className="text-lg font-medium text-primary-800">
@@ -34,26 +38,26 @@ export default function Contact() {
 
             <div className="flex items-center space-x-4">
               <span className="bg-primary-800 text-white p-3 rounded-full">
-                ✉️
+                <MdEmail />
               </span>
               <div>
                 <h3 className="text-lg font-medium text-primary-800">Email</h3>
-                <p className="text-gray-700">contact@imagein.com</p>
+                <p className="text-gray-700">Sylvie.clerc@laposte.net</p>
               </div>
             </div>
 
             <div className="flex items-center space-x-4">
               <span className="bg-primary-800 text-white p-3 rounded-full">
-                📍
+                <IoLocationSharp />
               </span>
               <div>
                 <h3 className="text-lg font-medium text-primary-800">
                   Adresse
                 </h3>
                 <p className="text-gray-700">
-                  123 Rue de la Beauté,
+                  473 chemin de roman
                   <br />
-                  75000 Paris, France
+                  73420 Méry, France
                 </p>
               </div>
             </div>
@@ -61,7 +65,7 @@ export default function Contact() {
         </div>
 
         {/* Right Section: Contact Form */}
-        <div className="bg-white bg-opacity-80 rounded-lg shadow-lg p-8">
+        <div className="bg-white bg-opacity-90 rounded-lg shadow-2xl border border-gray-200 p-8">
           <form className="space-y-6">
             {/* First Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -74,7 +78,7 @@ export default function Contact() {
                   id="nom"
                   placeholder="Nom"
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-primary-800 focus:border-primary-800"
+                  className="w-full text-primary-800 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800  focus:text-black"
                 />
               </div>
               <div>
@@ -86,7 +90,7 @@ export default function Contact() {
                   id="prenom"
                   placeholder="Prénom"
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-primary-800 focus:border-primary-800"
+                  className="w-full text-primary-800 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2  focus:outline-none focus:border-primary-800 focus:text-black"
                 />
               </div>
             </div>
@@ -102,7 +106,7 @@ export default function Contact() {
                   id="telephone"
                   placeholder="Téléphone"
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-primary-800 focus:border-primary-800"
+                  className="w-full text-primary-800 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
                 />
               </div>
               <div>
@@ -114,7 +118,7 @@ export default function Contact() {
                   id="ville"
                   placeholder="Ville"
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-primary-800 focus:border-primary-800"
+                  className="w-full text-primary-800 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
                 />
               </div>
             </div>
@@ -129,24 +133,8 @@ export default function Contact() {
                 id="email"
                 placeholder="Email"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-primary-800 focus:border-primary-800"
+                className="w-full text-primary-800 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
               />
-            </div>
-
-            {/* Dropdown */}
-            <div>
-              <label htmlFor="demande" className="sr-only">
-                Préciser ma demande
-              </label>
-              <select
-                id="demande"
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-primary-800 focus:border-primary-800"
-              >
-                <option value="">Préciser ma demande</option>
-                <option value="rdv">Prendre un rendez-vous</option>
-                <option value="question">Poser une question</option>
-                <option value="autre">Autre</option>
-              </select>
             </div>
 
             {/* Message */}
@@ -159,7 +147,7 @@ export default function Contact() {
                 placeholder="Votre message, vos demandes."
                 rows={4}
                 required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-primary-800 focus:border-primary-800"
+                className="w-full text-primary-800 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
               ></textarea>
             </div>
 
@@ -173,8 +161,8 @@ export default function Contact() {
           </form>
 
           {/* Contact Info */}
-          <div className="mt-6 text-gray-700 text-sm text-center">
-            metamorpho.contact@gmail.com - 06 31 03 73 15
+          <div className="mt-6 text-secondary text-sm text-center">
+            Sylvie.clerc@laposte.net - 06 12 34 56 78
           </div>
         </div>
       </div>
@@ -187,7 +175,7 @@ export default function Contact() {
         <div className="w-full h-96 rounded-lg overflow-hidden shadow-md">
           <iframe
             title="Google Maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.337120927223!2d2.3488!3d48.8566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d8771c8aab%3A0x5528a74b7ec99f7c!2sParis%2C%20France!5e0!3m2!1sen!2sfr!4v1680000000000!5m2!1sen!2sfr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11156.88412393808!2d5.913226735435457!3d45.646382839163984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ba7100094170b%3A0x5b9df58dbce795a4!2s473%20Chem.%20de%20Roman%2C%2073420%20Mery!5e0!3m2!1sfr!2sfr!4v1732791813295!5m2!1sfr!2sfr"
             width="100%"
             height="100%"
             style={{ border: 0 }}

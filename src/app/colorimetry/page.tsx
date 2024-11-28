@@ -5,7 +5,7 @@ export default function Colorimetry() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-8 md:px-16">
         {/* Left Section: Text */}
         <div className="flex flex-col justify-center space-y-6">
-          <h1 className="title text-4xl md:text-5xl font-bold leading-tight">
+          <h1 className="title text-primary-800 text-4xl md:text-5xl font-bold leading-tight">
             Colorimétrie
           </h1>
           <p className="text text-lg md:text-xl text-gray-700">
@@ -20,7 +20,7 @@ export default function Colorimetry() {
             nous vous aidons à créer un style qui flatte votre apparence et
             reflète aussi votre personnalité unique.
           </p>
-          <h2 className="subtitle text-2xl font-semibold text-gray-800">
+          <h2 className="title text-primary-800 text-2xl font-semibold ">
             Ce que nous offrons :
           </h2>
           <ul className="list-disc pl-6 text-lg md:text-xl text-gray-700 space-y-2">
@@ -46,21 +46,31 @@ export default function Colorimetry() {
             attentes. Investir dans la colorimétrie, c'est investir dans une
             version plus épanouie de vous-même.
           </p>
+          {/* Call to Action Button */}
+          <div className="mt-6">
+            <a
+              href="/contact" // Changez ce lien selon vos besoins
+              className="inline-flex items-center px-6 py-3 border-2 border-black text-black font-semibold rounded-md text-primary-800 hover:text-tercary-400 transition duration-300"
+            >
+              <span className="mr-2">→</span>
+              Prenez rendez-vous
+            </a>
+          </div>
         </div>
 
         {/* Right Section: Images */}
-        <div className="flex flex-col justify-around h-full space-y-6 lg:space-y-0">
+        <div className="flex flex-col gap-6">
           {/* First Image */}
           <div
-            className="w-full h-[200px] md:h-[300px] lg:h-[350px] bg-cover bg-center shadow-lg"
+            className="w-full h-[200px] md:h-[300px] lg:h-[350px] aspect-video bg-cover rounded-lg bg-center shadow-lg"
             style={{
-              backgroundImage: "url('/assets/clothes-1839935_1920.jpg')",
+              backgroundImage: "url('/assets/colorimetry.webp')",
             }}
           ></div>
 
           {/* Second Image */}
           <div
-            className="w-full h-[200px] md:h-[300px] lg:h-[350px] bg-cover bg-center shadow-lg"
+            className="w-full h-[200px] md:h-[300px] lg:h-[350px] aspect-video bg-cover rounded-lg bg-center shadow-lg"
             style={{
               backgroundImage: "url('/assets/fabric-1490513_1920.jpg')",
             }}

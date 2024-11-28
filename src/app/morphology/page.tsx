@@ -1,30 +1,32 @@
 export default function Morphology() {
   return (
-    <section className="relative bg-white">
+    <section className="relative bg-white py-16">
       {/* Container */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:px-16 items-center">
         {/* Left Section: Images */}
-        <div className="flex flex-col justify-around items-center space-y-6 px-8">
+        <div className="flex flex-col gap-8">
           {/* Top Image */}
           <div
-            className="w-full h-[200px] md:h-[300px] lg:h-[350px] bg-cover bg-center shadow-lg"
+            className="w-full aspect-video bg-cover bg-center rounded-lg shadow-lg"
             style={{
-              backgroundImage: "url('/assets/Harry Style.jpg')", // Remplacez par le chemin de votre image
+              backgroundImage: "url('/assets/morphology-1.jpg')", // Remplacez par le chemin de votre image
             }}
+            aria-label="Analyse morphologique image 1"
           ></div>
 
           {/* Bottom Image */}
           <div
-            className="w-full h-[200px] md:h-[300px] lg:h-[350px] bg-cover bg-center shadow-lg"
+            className="w-full aspect-video bg-cover bg-center rounded-lg shadow-lg"
             style={{
-              backgroundImage: "url('/assets/fabric-1490513_1920.jpg')", // Remplacez par le chemin de votre deuxième image
+              backgroundImage: "url('/assets/morphology-2.jpg')", // Remplacez par le chemin de votre deuxième image
             }}
+            aria-label="Analyse morphologique image 2"
           ></div>
         </div>
 
         {/* Right Section: Text */}
-        <div className="flex flex-col justify-center px-8 md:px-16 space-y-6 py-16">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+        <div className="flex flex-col space-y-6">
+          <h1 className="text-primary-800 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
             Analyse Morphologique
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
@@ -37,9 +39,9 @@ export default function Morphology() {
             vos proportions, allonger votre silhouette, étoffer certaines zones,
             nous vous accompagnons avec des conseils personnalisés.
           </p>
-          <p className="text-lg md:text-xl text-gray-700">
-            <strong>Ce que nous offrons :</strong>
-          </p>
+          <h2 className="text-primary-800 text-2xl font-semibold ">
+            Ce que nous offrons :
+          </h2>
           <ul className="list-disc pl-6 text-lg md:text-xl text-gray-700 space-y-2">
             <li>
               Étude de la silhouette : Nous analysons vos courbes et proportions
@@ -70,8 +72,8 @@ export default function Morphology() {
           {/* Call to Action Button */}
           <div className="mt-6">
             <a
-              href="/appointment" // Changez ce lien selon vos besoins
-              className="inline-flex items-center px-6 py-3 border-2 border-black text-black font-semibold rounded-md hover:bg-black hover:text-tercary transition duration-300"
+              href="/contact" // Changez ce lien selon vos besoins
+              className="inline-flex items-center px-6 py-3 border-2 border-black text-black font-semibold rounded-md text-primary-800 hover:text-tercary-400 transition duration-300"
             >
               <span className="mr-2">→</span>
               Prenez rendez-vous

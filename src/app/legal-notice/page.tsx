@@ -70,7 +70,7 @@ export default function LegalNotice() {
           </h2>
           <p>
             Le site a été conçu et est géré par :{" "}
-            <strong>Geoffrey Lusitano</strong>.
+            <strong>Geoffrey Lusitano</strong>. ( Première version provisoire )
           </p>
           <ul className="list-disc pl-6 mt-2">
             <li>**Nom** : Geoffrey Lusitano</li>

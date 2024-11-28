@@ -5,7 +5,7 @@ export default function About() {
       <div className="grid grid-cols-1 lg:grid-cols-2 h-screen">
         {/* Left Section: Text */}
         <div className="flex flex-col justify-center px-8 md:px-16 space-y-6">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          <h1 className="text-primary-800 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
             À propos
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
@@ -42,9 +42,9 @@ export default function About() {
           <div className="absolute inset-0 -skew-x-6 bg-gray-100"></div>
           {/* Main Image */}
           <div
-            className="absolute inset-0 bg-cover bg-center transform skew-x-6"
+            className="absolute inset-0 bg-cover bg-center "
             style={{
-              backgroundImage: "url('/assets/femme face à un nuancier.webp')", // Remplacez avec le chemin de votre image
+              backgroundImage: "url('/assets/apropos.jpg')", // Remplacez avec le chemin de votre image
             }}
           ></div>
         </div>

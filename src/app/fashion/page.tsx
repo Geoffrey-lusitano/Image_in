@@ -1,20 +1,20 @@
 export default function Fashion() {
   return (
-    <section className="bg-white">
-      {/* Section 1 */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
-        {/* Left: Text */}
-        <div className="px-8 md:px-16 py-12">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+    <section className="relative bg-white py-16">
+      {/* Container */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-8 md:px-16">
+        {/* Left Section: Text */}
+        <div className="flex flex-col justify-center space-y-6">
+          <h1 className="title text-primary-800 text-4xl md:text-5xl font-bold leading-tight">
             Analyse de Style
           </h1>
-          <p className="text-lg md:text-xl text-gray-700 mt-4">
+          <p className="text text-lg md:text-xl text-gray-700">
             Les temps changent, votre style de vie change, vous évoluez, il est
             normal que votre style vestimentaire s'harmonise avec qui vous êtes
             vraiment !
           </p>
-          <p className="text-lg md:text-xl text-gray-700 mt-4">
-            <strong>Pourquoi l'analyse de style :</strong> Au delà de la mode,
+          <p className="text text-lg md:text-xl text-gray-700">
+            <strong>Pourquoi l'analyse de style :</strong> Au-delà de la mode,
             il s'agit de comprendre votre identité, vos préférences et d'adapter
             vos tenues pour révéler au mieux qui vous êtes. Que vous cherchiez à
             moderniser votre look, à affirmer votre style personnel ou à vous
@@ -22,37 +22,10 @@ export default function Fashion() {
             ...), nous vous guiderons avec une analyse de style personnalisée et
             authentique.
           </p>
-        </div>
-
-        {/* Right: Image */}
-        <div
-          className="relative bg-cover bg-center h-[400px] md:h-[500px]"
-          style={{
-            backgroundImage: "url('/assets/cloth-1835894_1920.jpg')", // Remplacez par votre image
-          }}
-        >
-          <div className="absolute inset-0 -skew-x-6 bg-gray-100 opacity-30"></div>
-        </div>
-      </div>
-
-      {/* Section 2 */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
-        {/* Left: Image */}
-        <div
-          className="relative bg-cover bg-center h-[400px] md:h-[500px]"
-          style={{
-            backgroundImage: "url('/assets/hands-1866619_1920.jpg')", // Remplacez par votre image
-          }}
-        >
-          <div className="absolute inset-0 -skew-x-6 bg-gray-100 opacity-30"></div>
-        </div>
-
-        {/* Right: Text */}
-        <div className="px-8 md:px-16 py-12">
-          <h2 className="text-3xl md:text-4xl font-semibold">
+          <h2 className="title text-primary-800 text-2xl font-semibold">
             Ce que nous offrons :
           </h2>
-          <ul className="list-disc pl-6 mt-4 text-lg md:text-xl text-gray-700 space-y-2">
+          <ul className="list-disc pl-6 text-lg md:text-xl text-gray-700 space-y-2">
             <li>
               <strong>Analyse de votre style actuel :</strong> Nous identifions
               vos préférences vestimentaires, couleurs et pièces clés de votre
@@ -67,16 +40,54 @@ export default function Fashion() {
             </li>
           </ul>
         </div>
+
+        {/* Right Section: Images */}
+        <div className="flex flex-col gap-6">
+          {/* First Image */}
+          <div
+            className="w-full h-[200px] md:h-[300px] lg:h-[350px] aspect-video bg-cover rounded-lg bg-center shadow-lg"
+            style={{
+              backgroundImage: "url('/assets/fashion-1.jpg')", // Remplacez par votre image
+            }}
+          ></div>
+
+          {/* Second Image */}
+          <div
+            className="w-full h-[200px] md:h-[300px] lg:h-[350px] aspect-video bg-cover rounded-lg bg-center shadow-lg"
+            style={{
+              backgroundImage: "url('/assets/fashion-2.jpg')", // Remplacez par votre image
+            }}
+          ></div>
+        </div>
       </div>
 
-      {/* Section 3 */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
-        {/* Left: Text */}
-        <div className="px-8 md:px-16 py-12">
-          <h2 className="text-3xl md:text-4xl font-semibold">
+      {/* Section 2 */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-8 md:px-16 mt-16">
+        {/* Left Section: Images */}
+        <div className="flex flex-col gap-6">
+          {/* First Image */}
+          <div
+            className="w-full h-[200px] md:h-[300px] lg:h-[350px] aspect-video bg-cover rounded-lg bg-center shadow-lg"
+            style={{
+              backgroundImage: "url('/assets/fashion-3.jpg')", // Remplacez par votre image
+            }}
+          ></div>
+
+          {/* Second Image */}
+          <div
+            className="w-full h-[200px] md:h-[300px] lg:h-[350px] aspect-video bg-cover rounded-lg bg-center shadow-lg"
+            style={{
+              backgroundImage: "url('/assets/fashion-4.jpg')", // Remplacez par votre image
+            }}
+          ></div>
+        </div>
+
+        {/* Right Section: Text */}
+        <div className="flex flex-col justify-center space-y-6">
+          <h2 className="title text-primary-800 text-2xl font-semibold">
             Pourquoi choisir Image'In et Vous ?
           </h2>
-          <p className="text-lg md:text-xl text-gray-700 mt-4">
+          <p className="text text-lg md:text-xl text-gray-700">
             Notre démarche repose sur une écoute attentive et une approche
             personnalisée. Chaque personne a un style unique et notre objectif
             est de vous aider à l'exprimer pleinement, tout en vous offrant des
@@ -85,20 +96,20 @@ export default function Fashion() {
             vous puissiez vous sentir à l'aise et en confiance dans toutes les
             situations.
           </p>
-          <p className="text-lg md:text-xl text-gray-700 mt-4">
+          <p className="text text-lg md:text-xl text-gray-700">
             Prenez rendez-vous dès aujourd'hui et explorez les possibilités
             infinies de votre style personnel avec Image'In et Vous !
           </p>
-        </div>
-
-        {/* Right: Image */}
-        <div
-          className=" relative bg-cover bg-center h-[400px] md:h-[500px]"
-          style={{
-            backgroundImage: "url('/assets/fabric-1490513_1920.jpg')", // Remplacez par votre image
-          }}
-        >
-          <div className="absolute inset-0 -skew-x-6 bg-gray-100 opacity-30"></div>
+          {/* Call to Action Button */}
+          <div className="mt-6">
+            <a
+              href="/contact" // Changez ce lien selon vos besoins
+              className="inline-flex items-center px-6 py-3 border-2 border-black text-black font-semibold rounded-md text-primary-800 hover:text-tercary-400 transition duration-300"
+            >
+              <span className="mr-2">→</span>
+              Prenez rendez-vous
+            </a>
+          </div>
         </div>
       </div>
     </section>

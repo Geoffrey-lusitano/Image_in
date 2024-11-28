@@ -34,26 +34,46 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="bg-white py-16 px-4 md:px-16">
-      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12">
-        Livre d'or
-      </h1>
+    <section className="relative bg-white py-16 px-4 md:px-16">
+      {/* Header */}
+      <div className="text-center mb-12">
+        <h1 className="title text-primary-800 text-4xl md:text-5xl font-bold">
+          Livre d'or
+        </h1>
+        <p className="text-lg md:text-xl text-gray-600 mt-4">
+          Découvrez les avis de nos clients satisfaits et inspirez-vous de leurs
+          expériences.
+        </p>
+      </div>
 
-      <Slider {...settings} className="max-w-4xl mx-auto">
-        {testimonials.map((testimonial, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center text-center px-8"
-          >
-            <p className="text-lg md:text-xl text-gray-700 italic mb-6">
-              "{testimonial.text}"
-            </p>
-            <span className="text-primary-800 font-bold text-lg">
-              - {testimonial.name}
-            </span>
-          </div>
-        ))}
-      </Slider>
+      {/* Content Wrapper for Slider and Image */}
+      <div className="max-w-4xl mx-auto space-y-8">
+        {/* Slider */}
+        <Slider {...settings}>
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center text-center p-8 bg-primary-400 rounded-lg"
+            >
+              <p className="text-lg md:text-xl text-gray-700 italic mb-6">
+                "{testimonial.text}"
+              </p>
+              <span className="text-primary-800 font-bold text-lg">
+                - {testimonial.name}
+              </span>
+            </div>
+          ))}
+        </Slider>
+
+        {/* Decorative Image */}
+        <div
+          className="w-full h-[200px] md:h-[300px] lg:h-[350px] bg-cover bg-center rounded-lg shadow-lg"
+          style={{
+            backgroundImage: "url('/assets/wardrobe-1.jpg')", // Remplacez par votre image
+          }}
+          aria-label="Décoration"
+        ></div>
+      </div>
     </section>
   );
 }
