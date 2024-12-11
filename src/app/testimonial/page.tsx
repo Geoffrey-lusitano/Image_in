@@ -5,20 +5,16 @@ import Slider from "react-slick";
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Marie D.",
-      text: "Une expérience incroyable ! Grâce à cette analyse, j'ai enfin trouvé les vêtements qui correspondent à ma personnalité.",
+      name: "Aurélie , 46 ans",
+      text: "Un grand merci à Sylvie pour ses conseils. Parfois on porte certaines choses parce qu'on pense qu ils nous vont bien mais grâce aux conseils avisés de Sylvie, je suis allée vers des teintes que je n'aurai jamais osé tester mais qui au final me mettent plus en valeur… Comme quoi associer les couleurs au teint et cheveux c'est pas si facile que ça ! C'est un métier !!! En un apres midi, très rapidement j ai pu savoir grâce à Sylvie, quelles couleurs et formes de vêtements me mettent réellement en valeur. Un grand Merci",
     },
     {
-      name: "Paul T.",
-      text: "Un service de qualité, personnalisé et professionnel. Merci pour tous ces conseils !",
+      name: "Maud",
+      text: "J'ai eu l'occasion de faire une scéance de colorimétrie. Cette expérience m'a permis de prendre conscience de l'effet que peuvent avoir les couleurs sur notre visage et à quelle point elles peuvent nous mettre en valeur ou non. Je peux donc faire les magasins en fonction de ces informations. Après j'ai fait des séances de 'tri' de mes vêtements, de ce qui me va ou non et qu'elle assortiment je peux faire. Je suis vraiment contente d'avoir pu faire cela. Ça m'a permis d'avoir plus confiance en moi et de prendre plus de plaisir à m'habiller. De plus Sylvie est vraiment une personne gentille et douce qui tient pas seulement compte du physique mais aussi du psychologique. Je recommande vraiment !",
     },
     {
       name: "Lucie M.",
       text: "Je me sens tellement mieux dans ma peau maintenant. Une vraie transformation !",
-    },
-    {
-      name: "Julien R.",
-      text: "Des conseils pertinents et un accompagnement parfait. Je recommande vivement.",
     },
   ];
 

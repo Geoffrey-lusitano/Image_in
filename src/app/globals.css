@@ -39,7 +39,26 @@ body {
 .subtitle {
   font-family: var(--font-libre-baskerville);
 }
-:where(h1, h2, h3, h4, h5, h6, a) {
+
+/* Fromulaire style auto  */
+
+/* Cibler les champs autofill */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: #f4dda0 !important;
+  color: #808080 !important;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #808080 !important;
+}
+
+input:-internal-autofill-selected {
+  background-color: #f4dda0 !important;
+  color: #808080 !important;
+  -webkit-text-fill-color: #808080 !important;
+}
+
+:where(h1, h2, h3, h4, h5, h6, a, Link) {
   @apply title;
 }
 :where(p, ) {

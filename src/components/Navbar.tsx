@@ -4,6 +4,7 @@ import { Logo } from "@/design-system/logo/logo";
 import { FaInstagram, FaSquareFacebook } from "react-icons/fa6";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ export default function Navbar() {
         <Logo size="small" />
 
         {/* Desktop Menu */}
-        <ul className="hidden lg:flex tittle text-white space-x-3">
+        <ul className="hidden lg:flex tittle text-white space-x-8">
           {[
             { href: "/", label: "Accueil" },
             { href: "/about", label: "À propos" },
@@ -30,13 +31,13 @@ export default function Navbar() {
             { href: "/testimonial", label: "Livre d’or" },
             { href: "/contact", label: "Contact" },
           ].map((menuItem) => (
-            <li key={menuItem.href} className="group ml-10 text-xl">
-              <a
+            <li key={menuItem.href} className="group text-xl">
+              <Link
                 href={menuItem.href}
-                className="relative hover:text-tercary-200 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-tercary-200 after:transition-all after:duration-800  after:ease-in-out group-hover:after:w-full"
+                className="relative hover:text-tercary-200 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-tercary-200 after:transition-all after:duration-1000  after:ease-in-out group-hover:after:w-full"
               >
                 {menuItem.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -97,12 +98,12 @@ export default function Navbar() {
               { href: "/contact", label: "Contact" },
             ].map((menuItem) => (
               <li key={menuItem.href} className="group py-4 text-xl">
-                <a
+                <Link
                   href={menuItem.href}
                   className="relative hover:text-tercary-200 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-tercary-200 after:transition-all after:duration-300 group-hover:after:w-full"
                 >
                   {menuItem.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

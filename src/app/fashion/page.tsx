@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Fashion() {
   return (
     <section className="relative bg-white py-16">
@@ -102,13 +104,13 @@ export default function Fashion() {
           </p>
           {/* Call to Action Button */}
           <div className="mt-6">
-            <a
+            <Link
               href="/contact" // Changez ce lien selon vos besoins
               className="inline-flex items-center px-6 py-3 border-2 border-black text-black font-semibold rounded-md text-primary-800 hover:text-tercary-400 transition duration-300"
             >
               <span className="mr-2">→</span>
               Prenez rendez-vous
-            </a>
+            </Link>
           </div>
         </div>
       </div>

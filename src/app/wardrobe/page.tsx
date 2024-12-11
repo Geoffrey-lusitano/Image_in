@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Wardrobe() {
   return (
     <section className="relative bg-white py-16">
@@ -27,7 +29,7 @@ export default function Wardrobe() {
         {/* Right Section: Text */}
         <div className="flex flex-col space-y-6">
           <h1 className="text-primary-800 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            Analyse de Dressing
+            Analyse & tri du Dressing
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
             Votre dressing déborde mais vous avez toujours l'impression de ne
@@ -73,13 +75,13 @@ export default function Wardrobe() {
 
           {/* Call to Action Button */}
           <div className="mt-6">
-            <a
+            <Link
               href="/contact" // Changez ce lien selon vos besoins
               className="inline-flex items-center px-6 py-3 border-2 border-black text-black font-semibold rounded-md text-primary-800 hover:text-tercary-400 transition duration-300"
             >
               <span className="mr-2">→</span>
               Prenez rendez-vous
-            </a>
+            </Link>
           </div>
         </div>
       </div>

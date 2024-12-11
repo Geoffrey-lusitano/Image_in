@@ -32,7 +32,7 @@ export default function Contact() {
                 <h3 className="text-lg font-medium text-primary-800">
                   Téléphone
                 </h3>
-                <p className="text-gray-700">+33 6 12 34 56 78</p>
+                <p className="text-gray-700">+33 6 17 87 17 45</p>
               </div>
             </div>
 
@@ -42,7 +42,12 @@ export default function Contact() {
               </span>
               <div>
                 <h3 className="text-lg font-medium text-primary-800">Email</h3>
-                <p className="text-gray-700">Sylvie.clerc@laposte.net</p>
+                <a
+                  href="mailto:Sylvie@imaginetvous.com"
+                  className="text-gray-700 hover:text-tercary"
+                >
+                  Sylvie@imaginetvous.com
+                </a>
               </div>
             </div>
 
@@ -65,8 +70,13 @@ export default function Contact() {
         </div>
 
         {/* Right Section: Contact Form */}
-        <div className="bg-white bg-opacity-90 rounded-lg shadow-2xl border border-gray-200 p-8">
-          <form className="space-y-6">
+        <div className="bg-white bg-opacity-90 rounded-lg shadow-2xl border border-primary-800 p-8">
+          <form
+            action="mailto:Sylvie@imaginetvous.com"
+            method="POST"
+            encType="text/plain"
+            className="space-y-6"
+          >
             {/* First Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
@@ -76,9 +86,10 @@ export default function Contact() {
                 <input
                   type="text"
                   id="nom"
+                  name="Nom"
                   placeholder="Nom"
                   required
-                  className="w-full text-primary-800 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800  focus:text-black"
+                  className="w-full text-gray-700 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800  focus:text-black"
                 />
               </div>
               <div>
@@ -88,9 +99,10 @@ export default function Contact() {
                 <input
                   type="text"
                   id="prenom"
+                  name="Prénom"
                   placeholder="Prénom"
                   required
-                  className="w-full text-primary-800 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2  focus:outline-none focus:border-primary-800 focus:text-black"
+                  className="w-full text-gray-700 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2  focus:outline-none focus:border-primary-800 focus:text-black"
                 />
               </div>
             </div>
@@ -104,9 +116,10 @@ export default function Contact() {
                 <input
                   type="tel"
                   id="telephone"
+                  name="Téléphone"
                   placeholder="Téléphone"
                   required
-                  className="w-full text-primary-800 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
+                  className="w-full text-gray-700 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
                 />
               </div>
               <div>
@@ -116,9 +129,10 @@ export default function Contact() {
                 <input
                   type="text"
                   id="ville"
+                  name="Ville"
                   placeholder="Ville"
                   required
-                  className="w-full text-primary-800 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
+                  className="w-full text-gray-700 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
                 />
               </div>
             </div>
@@ -131,9 +145,10 @@ export default function Contact() {
               <input
                 type="email"
                 id="email"
+                name="Email"
                 placeholder="Email"
                 required
-                className="w-full text-primary-800 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
+                className="w-full text-gray-700 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
               />
             </div>
 
@@ -144,10 +159,11 @@ export default function Contact() {
               </label>
               <textarea
                 id="message"
+                name="Message"
                 placeholder="Votre message, vos demandes."
                 rows={4}
                 required
-                className="w-full text-primary-800 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
+                className="w-full text-gray-700 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
               ></textarea>
             </div>
 
@@ -162,26 +178,8 @@ export default function Contact() {
 
           {/* Contact Info */}
           <div className="mt-6 text-secondary text-sm text-center">
-            Sylvie.clerc@laposte.net - 06 12 34 56 78
+            Sylvie@imaginetvous.com - 06 17 87 17 45
           </div>
-        </div>
-      </div>
-
-      {/* Map Section */}
-      <div className="mt-16">
-        <h2 className="text-2xl font-semibold text-primary-800 text-center mb-6">
-          Trouvez-nous
-        </h2>
-        <div className="w-full h-96 rounded-lg overflow-hidden shadow-md">
-          <iframe
-            title="Google Maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11156.88412393808!2d5.913226735435457!3d45.646382839163984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ba7100094170b%3A0x5b9df58dbce795a4!2s473%20Chem.%20de%20Roman%2C%2073420%20Mery!5e0!3m2!1sfr!2sfr!4v1732791813295!5m2!1sfr!2sfr"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            loading="lazy"
-            allowFullScreen
-          ></iframe>
         </div>
       </div>
     </section>

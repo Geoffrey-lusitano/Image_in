@@ -20,17 +20,17 @@ export default function LegalNotice() {
             <li>**Adresse** : 473 chemin de roman ,73420 Méry, France</li>
             <li>
               **Téléphone** :{" "}
-              <a href="tel:+33 6 12 34 56 78" className="hover:text-primary">
-                +33 6 12 34 56 78
+              <a href="tel:+33 6 17 87 17 45" className="hover:text-primary">
+                +33 6 17 87 17 45
               </a>
             </li>
             <li>
               **Email** :{" "}
               <a
-                href="mailto:Sylvie.clerc@laposte.net"
+                href="mailto:Sylvie@imaginetvous.com"
                 className="hover:text-primary"
               >
-                Sylvie.clerc@laposte.net
+                Sylvie@imaginetvous.com
               </a>
             </li>
           </ul>

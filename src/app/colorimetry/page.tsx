@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Colorimetry() {
   return (
     <section className="relative bg-white py-16">
@@ -48,13 +50,13 @@ export default function Colorimetry() {
           </p>
           {/* Call to Action Button */}
           <div className="mt-6">
-            <a
+            <Link
               href="/contact" // Changez ce lien selon vos besoins
               className="inline-flex items-center px-6 py-3 border-2 border-black text-black font-semibold rounded-md text-primary-800 hover:text-tercary-400 transition duration-300"
             >
               <span className="mr-2">→</span>
               Prenez rendez-vous
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -68,13 +70,21 @@ export default function Colorimetry() {
             }}
           ></div>
 
-          {/* Second Image */}
-          <div
-            className="w-full h-[200px] md:h-[300px] lg:h-[350px] aspect-video bg-cover rounded-lg bg-center shadow-lg"
-            style={{
-              backgroundImage: "url('/assets/fabric-1490513_1920.jpg')",
-            }}
-          ></div>
+          {/* Merged Images */}
+          <div className="w-full h-[200px] md:h-[300px] lg:h-[350px] flex rounded-lg shadow-lg overflow-hidden">
+            <div
+              className="w-1/2 bg-cover bg-center"
+              style={{
+                backgroundImage: "url('/assets/colorimetry-2.jpg')", // Replace with the correct path
+              }}
+            ></div>
+            <div
+              className="w-1/2 bg-cover bg-center"
+              style={{
+                backgroundImage: "url('/assets/colorimetry-3.jpg')", // Replace with the correct path
+              }}
+            ></div>
+          </div>
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@
 
 import { FaInstagram, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { Logo } from "@/design-system/logo/logo";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -22,19 +23,19 @@ export default function Footer() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <ul>
                 <li className="mb-2">
-                  <a href="/" className="hover:text-tercary-200">
+                  <Link href="/" className="hover:text-tercary-200">
                     Accueil
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="/about" className="hover:text-tercary-200">
+                  <Link href="/about" className="hover:text-tercary-200">
                     À propos
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="/colorimetry" className="hover:text-tercary-200">
+                  <Link href="/colorimetry" className="hover:text-tercary-200">
                     Colorimétrie
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <ul>
@@ -44,31 +45,31 @@ export default function Footer() {
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="/fashion" className="hover:text-tercary-200">
+                  <Link href="/fashion" className="hover:text-tercary-200">
                     Style
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="/wardrobe" className="hover:text-tercary-200">
+                  <Link href="/wardrobe" className="hover:text-tercary-200">
                     Dressing
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <ul>
                 <li className="mb-2">
-                  <a href="/testimonial" className="hover:text-tercary-200">
+                  <Link href="/testimonial" className="hover:text-tercary-200">
                     Livre d’or
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="/contact" className="hover:text-tercary-200">
+                  <Link href="/contact" className="hover:text-tercary-200">
                     Contact
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="/blog" className="hover:text-tercary-200">
+                  <Link href="/blog" className="hover:text-tercary-200">
                     Blog
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -79,17 +80,17 @@ export default function Footer() {
             <p>Adresse : 473 chemin de roman 73420 Méry</p>
             <p>
               Téléphone :{" "}
-              <a href="tel:+33123456789" className="hover:text-tercary-200">
+              <a href="tel:+33617871745" className="hover:text-tercary-200">
                 06 17 87 17 45
               </a>
             </p>
             <p>
               Email :{" "}
               <a
-                href="mailto:Sylvie.clerc@laposte.net"
+                href="mailto:sylvie@imaginetvous.com"
                 className="hover:text-tercary-200"
               >
-                Sylvie.clerc@laposte.net
+                sylvie@imaginetvous.com
               </a>
             </p>
             <div className="flex mt-4 space-x-4">
@@ -119,15 +120,15 @@ export default function Footer() {
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <p>&copy; 2024 Imagin'et Vous. Tous droits réservés.</p>
             <div className="flex space-x-4 mt-2 md:mt-0">
-              <a href="/legal-notice" className="hover:text-primary">
+              <Link href="/legal-notice" className="hover:text-primary">
                 Mentions légales
-              </a>
-              <a href="/privacy-policy" className="hover:text-primary">
+              </Link>
+              <Link href="/privacy-policy" className="hover:text-primary">
                 Politique de confidentialité
-              </a>
-              <a href="/terms-of-service" className="hover:text-primary">
+              </Link>
+              <Link href="/terms-of-service" className="hover:text-primary">
                 Conditions d'utilisation
-              </a>
+              </Link>
             </div>
           </div>
         </div>

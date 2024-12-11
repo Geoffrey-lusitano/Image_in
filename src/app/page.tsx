@@ -10,24 +10,23 @@ export default function Home() {
       {/* Content */}
       <div className="relative flex flex-col items-center justify-center h-full px-8 md:px-16 text-white text-center space-y-8">
         {/* Company Name */}
-        <h1 className="text-5xl md:text-7xl font-bold tracking-wide">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-wide">
           Imagin'et Vous
         </h1>
 
         {/* Text Container with Blur Effect */}
         <div className="relative bg-gray-900 bg-opacity-60 backdrop-blur-md rounded-lg p-6 md:p-10 shadow-lg">
           {/* Title */}
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold mb-6">
-            Analyse de votre style actuel
-          </h2>
+          <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6">
+            S'habiller de Soi
+          </h3>
 
           {/* Description */}
           <p className="max-w-3xl text-lg md:text-xl leading-relaxed">
-            Nous identifions vos préférences vestimentaires, couleurs et pièces
-            clés de votre garde-robe. Que vous vouliez adopter un style plus
-            moderne, plus affirmé ou retourner au naturel, nous vous
-            accompagnons dans le choix de vêtements et accessoires qui
-            correspondent à votre futur tel que vous le voulez.
+            Les dicdats de la mode veulent vous imposer leurs lois ? Le regard
+            des autres vous pèse ? Se déshabiller des autres pour s'habiller de
+            Soi ! Tel est notre but chez Imagin'et Vous et nous sommes là pour
+            vous accompagner...
           </p>
         </div>
       </div>

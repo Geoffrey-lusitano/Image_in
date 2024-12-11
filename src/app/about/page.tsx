@@ -2,10 +2,10 @@ export default function About() {
   return (
     <section className="relative bg-white">
       {/* Container */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 h-screen">
+      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen lg:min-h-0 gap-6 px-6 md:px-16 py-12">
         {/* Left Section: Text */}
-        <div className="flex flex-col justify-center px-8 md:px-16 space-y-6">
-          <h1 className="text-primary-800 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+        <div className="flex flex-col justify-center space-y-6">
+          <h1 className="text-primary-800 text-4xl md:text-5xl font-bold leading-tight">
             À propos
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
@@ -36,17 +36,31 @@ export default function About() {
           </p>
         </div>
 
-        {/* Right Section: Image */}
-        <div className="relative">
-          {/* Decorative Slanted Shape */}
-          <div className="absolute inset-0 -skew-x-6 bg-gray-100"></div>
-          {/* Main Image */}
+        {/* Right Section: Images */}
+        <div className="grid grid-rows-2 gap-4">
+          {/* Large Image */}
           <div
-            className="absolute inset-0 bg-cover bg-center "
+            className="row-span-2 w-full h-[300px] lg:h-[500px] bg-cover bg-center rounded-lg shadow-lg"
             style={{
-              backgroundImage: "url('/assets/apropos.jpg')", // Remplacez avec le chemin de votre image
+              backgroundImage: "url('/assets/about-1.jpg')",
             }}
           ></div>
+
+          {/* Small Images */}
+          <div className="grid grid-cols-2 gap-4">
+            <div
+              className="w-full h-[150px] lg:h-[200px] bg-cover bg-center rounded-lg shadow-lg"
+              style={{
+                backgroundImage: "url('/assets/about-2.jpg')",
+              }}
+            ></div>
+            <div
+              className="w-full h-[150px] lg:h-[200px] bg-cover bg-center rounded-lg shadow-lg"
+              style={{
+                backgroundImage: "url('/assets/about-3.jpg')",
+              }}
+            ></div>
+          </div>
         </div>
       </div>
     </section>
