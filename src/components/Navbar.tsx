@@ -13,6 +13,10 @@ export default function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false); // Ferme le menu lorsque l'utilisateur clique sur un lien
+  };
+
   return (
     <nav className="fixed w-full h-24 shadow-xl text-primary-200 bg-primary-800 z-50">
       <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
@@ -46,7 +50,7 @@ export default function Navbar() {
         <ul className="hidden lg:flex space-x-2">
           <li>
             <a
-              href="https://www.instagram.com/relookingstudio/"
+              href="https://www.instagram.com/"
               className="text-white border hover:border-tercary-200 rounded-full flex items-center justify-center p-2"
             >
               <FaInstagram size={24} />
@@ -54,7 +58,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="https://www.instagram.com/relookingstudio/"
+              href="https://www.facebook.com/sylvie.clerc.758"
               className="text-white border hover:border-tercary-200 rounded-full flex items-center justify-center p-2"
             >
               <FaSquareFacebook size={24} />
@@ -101,6 +105,7 @@ export default function Navbar() {
                 <Link
                   href={menuItem.href}
                   className="relative hover:text-tercary-200 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-tercary-200 after:transition-all after:duration-300 group-hover:after:w-full"
+                  onClick={closeMenu} // Ferme le menu lors du clic sur un lien
                 >
                   {menuItem.label}
                 </Link>

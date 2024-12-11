@@ -1,7 +1,8 @@
-import type { NextConfig } from "next";
+import { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {NextConfig} */
+const nextConfig = {
+  output: "export", // Active l'export statique
 };
 
 export default nextConfig;

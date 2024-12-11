@@ -40,9 +40,9 @@ export default function Footer() {
               </ul>
               <ul>
                 <li className="mb-2">
-                  <a href="/morphology" className="hover:text-tercary-200">
+                  <Link href="/morphology" className="hover:text-tercary-200">
                     Morphologique
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
                   <Link href="/fashion" className="hover:text-tercary-200">
@@ -64,11 +64,6 @@ export default function Footer() {
                 <li className="mb-2">
                   <Link href="/contact" className="hover:text-tercary-200">
                     Contact
-                  </Link>
-                </li>
-                <li className="mb-2">
-                  <Link href="/blog" className="hover:text-tercary-200">
-                    Blog
                   </Link>
                 </li>
               </ul>
@@ -101,7 +96,7 @@ export default function Footer() {
                 <FaInstagram size={24} />
               </a>
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/sylvie.clerc.758"
                 className="text-white hover:text-tercary-200"
               >
                 <FaFacebookSquare size={24} />

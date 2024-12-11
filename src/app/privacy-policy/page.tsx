@@ -1,6 +1,6 @@
 export default function PrivacyPolicy() {
   return (
-    <section className="bg-gray-50 py-16 px-8 md:px-16">
+    <section className="bg-white py-16 px-8 md:px-16">
       <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-primary-800">
         Politique de Confidentialité
       </h1>

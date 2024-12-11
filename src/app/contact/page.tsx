@@ -4,7 +4,7 @@ import { IoLocationSharp } from "react-icons/io5";
 
 export default function Contact() {
   return (
-    <section className="bg-gray-50 py-16 px-8 md:px-16">
+    <section className="bg-white py-16 px-8 md:px-16">
       {/* Page Header */}
       <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-primary-800">
         Contact
@@ -22,11 +22,10 @@ export default function Contact() {
               rendez-vous ? N’hésitez pas à nous contacter directement.
             </p>
           </div>
-
           <div className="space-y-4">
             <div className="flex items-center space-x-4">
               <span className="bg-primary-800 text-white p-3 rounded-full">
-                <FaPhone />
+                <FaPhone size={32} />
               </span>
               <div>
                 <h3 className="text-lg font-medium text-primary-800">
@@ -35,10 +34,9 @@ export default function Contact() {
                 <p className="text-gray-700">+33 6 17 87 17 45</p>
               </div>
             </div>
-
             <div className="flex items-center space-x-4">
               <span className="bg-primary-800 text-white p-3 rounded-full">
-                <MdEmail />
+                <MdEmail size={32} />
               </span>
               <div>
                 <h3 className="text-lg font-medium text-primary-800">Email</h3>
@@ -50,19 +48,16 @@ export default function Contact() {
                 </a>
               </div>
             </div>
-
             <div className="flex items-center space-x-4">
               <span className="bg-primary-800 text-white p-3 rounded-full">
-                <IoLocationSharp />
+                <IoLocationSharp size={32} />
               </span>
               <div>
                 <h3 className="text-lg font-medium text-primary-800">
                   Adresse
                 </h3>
                 <p className="text-gray-700">
-                  473 chemin de roman
-                  <br />
-                  73420 Méry, France
+                  473 chemin de roman 73420 Méry, France
                 </p>
               </div>
             </div>
