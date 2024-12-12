@@ -1,5 +1,3 @@
-// Footer.js
-
 import { FaInstagram, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { Logo } from "@/design-system/logo/logo";
 import Link from "next/link";

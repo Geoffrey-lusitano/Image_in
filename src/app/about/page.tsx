@@ -1,10 +1,9 @@
 export default function About() {
   return (
     <section className="relative bg-white">
-      {/* Container */}
       <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen lg:min-h-0 gap-6 px-6 md:px-16 py-12">
         {/* Left Section: Text */}
-        <div className="flex flex-col justify-center space-y-6">
+        <div className="flex flex-col justify-center space-y-6 animate-fade-slide-left">
           <h1 className="text-primary-800 text-4xl md:text-5xl font-bold leading-tight">
             À propos
           </h1>
@@ -37,16 +36,13 @@ export default function About() {
         </div>
 
         {/* Right Section: Images */}
-        <div className="grid grid-rows-2 gap-4">
-          {/* Large Image */}
+        <div className="grid grid-rows-2 gap-4 animate-fade-slide-up">
           <div
             className="row-span-2 w-full h-[300px] lg:h-[500px] bg-cover bg-center rounded-lg shadow-lg"
             style={{
               backgroundImage: "url('/assets/about-1.jpg')",
             }}
           ></div>
-
-          {/* Small Images */}
           <div className="grid grid-cols-2 gap-4">
             <div
               className="w-full h-[150px] lg:h-[200px] bg-cover bg-center rounded-lg shadow-lg"

@@ -3,10 +3,9 @@ import Link from "next/link";
 export default function Colorimetry() {
   return (
     <section className="relative bg-white py-16">
-      {/* Container */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-8 md:px-16">
         {/* Left Section: Text */}
-        <div className="flex flex-col justify-center space-y-6">
+        <div className="flex flex-col justify-center space-y-6 animate-fade-slide-left">
           <h1 className="title text-primary-800 text-4xl md:text-5xl font-bold leading-tight">
             Colorimétrie
           </h1>
@@ -48,10 +47,10 @@ export default function Colorimetry() {
             attentes. Investir dans la colorimétrie, c'est investir dans une
             version plus épanouie de vous-même.
           </p>
-          {/* Call to Action Button */}
+
           <div className="mt-6">
             <Link
-              href="/contact" // Changez ce lien selon vos besoins
+              href="/contact"
               className="inline-flex items-center px-6 py-3 border-2 border-black text-black font-semibold rounded-md text-primary-800 hover:text-tercary-400 transition duration-300"
             >
               <span className="mr-2">→</span>
@@ -61,8 +60,7 @@ export default function Colorimetry() {
         </div>
 
         {/* Right Section: Images */}
-        <div className="flex flex-col gap-6">
-          {/* First Image */}
+        <div className="flex flex-col gap-6 animate-fade-slide-up">
           <div
             className="w-full h-[200px] md:h-[300px] lg:h-[350px] aspect-video bg-cover rounded-lg bg-center shadow-lg"
             style={{
@@ -70,18 +68,17 @@ export default function Colorimetry() {
             }}
           ></div>
 
-          {/* Merged Images */}
           <div className="w-full h-[200px] md:h-[300px] lg:h-[350px] flex rounded-lg shadow-lg overflow-hidden">
             <div
               className="w-1/2 bg-cover bg-center"
               style={{
-                backgroundImage: "url('/assets/colorimetry-2.jpg')", // Replace with the correct path
+                backgroundImage: "url('/assets/colorimetry-2.jpg')",
               }}
             ></div>
             <div
               className="w-1/2 bg-cover bg-center"
               style={{
-                backgroundImage: "url('/assets/colorimetry-3.jpg')", // Replace with the correct path
+                backgroundImage: "url('/assets/colorimetry-3.jpg')",
               }}
             ></div>
           </div>

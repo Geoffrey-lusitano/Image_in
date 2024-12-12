@@ -33,37 +33,37 @@ export const Logo = ({ size = "medium" }: Props) => {
           d="M124.869 245.39C191.431 245.39 245.39 191.431 245.39 124.869C245.39 58.3071 191.431 4.34802 124.869 4.34802C58.3071 4.34802 4.34802 58.3071 4.34802 124.869C4.34802 191.431 58.3071 245.39 124.869 245.39Z"
           fill="#EED7CD"
           stroke="url(#paint0_linear_8_2)"
-          stroke-width="7.30433"
+          strokeWidth="7.30433"
         />
         <path
           d="M212.706 161.208V81.1981C227.095 78.8171 241.778 78.8171 256.167 81.1981V161.208H212.706Z"
           fill="black"
           stroke="black"
-          stroke-width="0.365217"
+          strokeWidth="0.365217"
         />
         <path
           d="M248.861 40.9452V84.5528C239.386 86.8976 229.483 86.8976 220.009 84.5528V19.1392H227.055L248.861 40.9452Z"
           fill="#EED7CD"
           stroke="black"
-          stroke-width="0.365217"
+          strokeWidth="0.365217"
         />
         <path
           d="M209.053 226.947V143.3C225.953 142.101 242.917 142.101 259.818 143.3V226.947H209.053Z"
           fill="black"
           stroke="black"
-          stroke-width="0.365217"
+          strokeWidth="0.365217"
         />
         <path
           d="M212.706 81.2769C226.978 84.8058 241.895 84.8058 256.167 81.2769V146.628C241.778 149.009 227.095 149.009 212.706 146.628V81.2769Z"
           fill="url(#paint1_linear_8_2)"
           stroke="black"
-          stroke-width="0.365217"
+          strokeWidth="0.365217"
         />
         <path
           d="M209.053 143.372C225.649 148.067 243.222 148.067 259.818 143.372V234.276L253.003 235.25C240.687 237.009 228.183 237.009 215.867 235.25L209.053 234.276V143.372Z"
           fill="url(#paint2_linear_8_2)"
           stroke="black"
-          stroke-width="0.365217"
+          strokeWidth="0.365217"
         />
         <g filter="url(#filter0_f_8_2)">
           <path
@@ -113,9 +113,9 @@ export const Logo = ({ size = "medium" }: Props) => {
             width="18.2607"
             height="80.3474"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -134,9 +134,9 @@ export const Logo = ({ size = "medium" }: Props) => {
             width="21.9126"
             height="98.6087"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -155,9 +155,9 @@ export const Logo = ({ size = "medium" }: Props) => {
             width="18.2607"
             height="102.261"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -176,9 +176,9 @@ export const Logo = ({ size = "medium" }: Props) => {
             width="21.9126"
             height="80.3474"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -197,9 +197,9 @@ export const Logo = ({ size = "medium" }: Props) => {
             width="31.9567"
             height="74.8694"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -218,9 +218,9 @@ export const Logo = ({ size = "medium" }: Props) => {
             width="21.9137"
             height="65.739"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -240,8 +240,8 @@ export const Logo = ({ size = "medium" }: Props) => {
             y2="205.217"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#CB9371" />
-            <stop offset="1" stop-color="#532000" />
+            <stop stopColor="#CB9371" />
+            <stop offset="1" stopColor="#532000" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_8_2"
@@ -251,8 +251,8 @@ export const Logo = ({ size = "medium" }: Props) => {
             y2="113.913"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#834E2D" />
-            <stop offset="1" stop-color="#B27B59" />
+            <stop stopColor="#834E2D" />
+            <stop offset="1" stopColor="#B27B59" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_8_2"
@@ -262,8 +262,8 @@ export const Logo = ({ size = "medium" }: Props) => {
             y2="188.782"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#515152" />
-            <stop offset="1" stop-color="#5E5D5E" />
+            <stop stopColor="#515152" />
+            <stop offset="1" stopColor="#5E5D5E" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_8_2"
@@ -273,8 +273,8 @@ export const Logo = ({ size = "medium" }: Props) => {
             y2="39.4479"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#532000" />
-            <stop offset="1" stop-color="#CB9371" />
+            <stop stopColor="#532000" />
+            <stop offset="1" stopColor="#CB9371" />
           </linearGradient>
         </defs>
       </svg>

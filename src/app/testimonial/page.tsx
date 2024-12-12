@@ -13,8 +13,8 @@ export default function Testimonials() {
       text: "J'ai eu l'occasion de faire une scéance de colorimétrie. Cette expérience m'a permis de prendre conscience de l'effet que peuvent avoir les couleurs sur notre visage et à quelle point elles peuvent nous mettre en valeur ou non. Je peux donc faire les magasins en fonction de ces informations. Après j'ai fait des séances de 'tri' de mes vêtements, de ce qui me va ou non et qu'elle assortiment je peux faire. Je suis vraiment contente d'avoir pu faire cela. Ça m'a permis d'avoir plus confiance en moi et de prendre plus de plaisir à m'habiller. De plus Sylvie est vraiment une personne gentille et douce qui tient pas seulement compte du physique mais aussi du psychologique. Je recommande vraiment !",
     },
     {
-      name: "Lucie M.",
-      text: "Je me sens tellement mieux dans ma peau maintenant. Une vraie transformation !",
+      name: "Claire, 39 ans",
+      text: "Sylvie m'a accompagné avec beaucoup de bienveillance et de professionnalisme. J'ai découvert des couleurs qui illuminent mon teint et qui me donnent une tout autre allure, alors que je ne les aurais jamais envisagées auparavant. Grâce à ses conseils, j'ai appris à valoriser ma silhouette avec des vêtements qui correspondent réellement à ma personnalité et à mes envies. Cette expérience m'a non seulement permis de trier efficacement ma garde-robe, mais aussi de mieux comprendre comment jouer avec les couleurs et les styles au quotidien. Sylvie a une approche à la fois douce et psychologique, ce qui m'a vraiment mise à l'aise dès le départ. Je recommande ses services à toutes celles et ceux qui souhaitent révéler le meilleur d'eux-mêmes !",
     },
   ];
 
@@ -30,8 +30,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="relative bg-white py-16 px-4 md:px-16">
-      {/* Header */}
+    <section className="relative bg-white py-16 px-4 md:px-16 animate-fade-slide-up">
       <div className="text-center mb-12">
         <h1 className="title text-primary-800 text-4xl md:text-5xl font-bold">
           Livre d'or
@@ -41,10 +40,7 @@ export default function Testimonials() {
           expériences.
         </p>
       </div>
-
-      {/* Content Wrapper for Slider and Image */}
       <div className="max-w-4xl mx-auto space-y-8">
-        {/* Slider */}
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
             <div
@@ -60,12 +56,10 @@ export default function Testimonials() {
             </div>
           ))}
         </Slider>
-
-        {/* Decorative Image */}
         <div
           className="w-full h-[200px] md:h-[300px] lg:h-[350px] bg-cover bg-center rounded-lg shadow-lg"
           style={{
-            backgroundImage: "url('/assets/wardrobe-1.jpg')", // Remplacez par votre image
+            backgroundImage: "url('/assets/testimonial.jpg')",
           }}
           aria-label="Décoration"
         ></div>

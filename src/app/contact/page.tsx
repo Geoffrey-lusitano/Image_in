@@ -5,14 +5,11 @@ import { IoLocationSharp } from "react-icons/io5";
 export default function Contact() {
   return (
     <section className="bg-white py-16 px-8 md:px-16">
-      {/* Page Header */}
-      <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-primary-800">
+      <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-primary-800 animate-fade-slide-up">
         Contact
       </h1>
-
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        {/* Left Section: Contact Info */}
-        <div className="space-y-8">
+        <div className="space-y-8 animate-fade-slide-left">
           <div>
             <h2 className="text-2xl font-semibold text-primary-800">
               Contactez-nous
@@ -24,7 +21,7 @@ export default function Contact() {
           </div>
           <div className="space-y-4">
             <div className="flex items-center space-x-4">
-              <span className="bg-primary-800 text-white p-3 rounded-full">
+              <span className="bg-primary-800 text-white p-3 rounded-full hover:scale-110">
                 <FaPhone size={32} />
               </span>
               <div>
@@ -35,7 +32,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              <span className="bg-primary-800 text-white p-3 rounded-full">
+              <span className="bg-primary-800 text-white p-3 rounded-full hover:scale-110">
                 <MdEmail size={32} />
               </span>
               <div>
@@ -49,7 +46,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              <span className="bg-primary-800 text-white p-3 rounded-full">
+              <span className="bg-primary-800 text-white p-3 rounded-full hover:scale-110">
                 <IoLocationSharp size={32} />
               </span>
               <div>
@@ -63,16 +60,13 @@ export default function Contact() {
             </div>
           </div>
         </div>
-
-        {/* Right Section: Contact Form */}
-        <div className="bg-white bg-opacity-90 rounded-lg shadow-2xl border border-primary-800 p-8">
+        <div className="bg-white bg-opacity-90 rounded-lg shadow-2xl border border-primary-800 p-8 animate-fade-slide-right">
           <form
             action="mailto:Sylvie@imaginetvous.com"
             method="POST"
             encType="text/plain"
             className="space-y-6"
           >
-            {/* First Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="nom" className="sr-only">
@@ -101,8 +95,6 @@ export default function Contact() {
                 />
               </div>
             </div>
-
-            {/* Second Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="telephone" className="sr-only">
@@ -131,8 +123,6 @@ export default function Contact() {
                 />
               </div>
             </div>
-
-            {/* Email */}
             <div>
               <label htmlFor="email" className="sr-only">
                 Email
@@ -146,8 +136,6 @@ export default function Contact() {
                 className="w-full text-gray-700 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
               />
             </div>
-
-            {/* Message */}
             <div>
               <label htmlFor="message" className="sr-only">
                 Message
@@ -161,8 +149,6 @@ export default function Contact() {
                 className="w-full text-gray-700 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
               ></textarea>
             </div>
-
-            {/* Submit Button */}
             <button
               type="submit"
               className="w-full bg-primary-800 text-white py-3 rounded-lg font-semibold shadow-md hover:bg-primary-700 transition duration-300"
@@ -170,11 +156,25 @@ export default function Contact() {
               Envoyer
             </button>
           </form>
-
-          {/* Contact Info */}
           <div className="mt-6 text-secondary text-sm text-center">
             Sylvie@imaginetvous.com - 06 17 87 17 45
           </div>
+        </div>
+      </div>
+      <div className="mt-16 animate-fade-slide-up">
+        <h2 className="text-2xl font-semibold text-primary-800 text-center mb-6">
+          Trouvez-nous
+        </h2>
+        <div className="w-full h-96 rounded-lg overflow-hidden shadow-md">
+          <iframe
+            title="Google Maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11156.88412393808!2d5.913226735435457!3d45.646382839163984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ba7100094170b%3A0x5b9df58dbce795a4!2s473%20Chem.%20de%20Roman%2C%2073420%20Mery!5e0!3m2!1sfr!2sfr!4v1732791813295!5m2!1sfr!2sfr"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            loading="lazy"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
     </section>

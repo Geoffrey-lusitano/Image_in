@@ -3,31 +3,24 @@ import Link from "next/link";
 export default function Wardrobe() {
   return (
     <section className="relative bg-white py-16">
-      {/* Container */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:px-16 items-center">
-        {/* Left Section: Images */}
-        <div className="flex flex-col gap-8">
-          {/* Top Image */}
+        <div className="flex flex-col gap-8 animate-fade-slide-up">
           <div
             className="w-full aspect-video bg-cover bg-center rounded-lg shadow-lg"
             style={{
-              backgroundImage: "url('/assets/wardrobe-1.jpg')", // Remplacez par votre image
+              backgroundImage: "url('/assets/wardrobe-1.jpg')",
             }}
             aria-label="Analyse dressing image 1"
           ></div>
-
-          {/* Bottom Image */}
           <div
             className="w-full aspect-video bg-cover bg-center rounded-lg shadow-lg"
             style={{
-              backgroundImage: "url('/assets/wardrobe-2.jpg')", // Remplacez par votre image
+              backgroundImage: "url('/assets/wardrobe-2.jpg')",
             }}
             aria-label="Analyse dressing image 2"
           ></div>
         </div>
-
-        {/* Right Section: Text */}
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col space-y-6 animate-fade-slide-right">
           <h1 className="text-primary-800 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
             Analyse & tri du Dressing
           </h1>
@@ -73,10 +66,9 @@ export default function Wardrobe() {
             dressing organisé qui sublime votre style au quotidien !
           </p>
 
-          {/* Call to Action Button */}
           <div className="mt-6">
             <Link
-              href="/contact" // Changez ce lien selon vos besoins
+              href="/contact"
               className="inline-flex items-center px-6 py-3 border-2 border-black text-black font-semibold rounded-md text-primary-800 hover:text-tercary-400 transition duration-300"
             >
               <span className="mr-2">→</span>

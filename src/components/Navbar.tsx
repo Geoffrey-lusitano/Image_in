@@ -14,13 +14,12 @@ export default function Navbar() {
   };
 
   const closeMenu = () => {
-    setMenuOpen(false); // Ferme le menu lorsque l'utilisateur clique sur un lien
+    setMenuOpen(false);
   };
 
   return (
     <nav className="fixed w-full h-24 shadow-xl text-primary-200 bg-primary-800 z-50">
       <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
-        {/* Logo */}
         <Logo size="small" />
 
         {/* Desktop Menu */}
@@ -105,7 +104,7 @@ export default function Navbar() {
                 <Link
                   href={menuItem.href}
                   className="relative hover:text-tercary-200 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-tercary-200 after:transition-all after:duration-300 group-hover:after:w-full"
-                  onClick={closeMenu} // Ferme le menu lors du clic sur un lien
+                  onClick={closeMenu}
                 >
                   {menuItem.label}
                 </Link>

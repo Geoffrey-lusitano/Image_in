@@ -3,10 +3,9 @@ import Link from "next/link";
 export default function Fashion() {
   return (
     <section className="relative bg-white py-16">
-      {/* Container */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-8 md:px-16">
         {/* Left Section: Text */}
-        <div className="flex flex-col justify-center space-y-6">
+        <div className="flex flex-col justify-center space-y-6 animate-fade-slide-left">
           <h1 className="title text-primary-800 text-4xl md:text-5xl font-bold leading-tight">
             Analyse de Style
           </h1>
@@ -44,48 +43,41 @@ export default function Fashion() {
         </div>
 
         {/* Right Section: Images */}
-        <div className="flex flex-col gap-6">
-          {/* First Image */}
+        <div className="flex flex-col gap-6 animate-fade-slide-up">
           <div
             className="w-full h-[200px] md:h-[300px] lg:h-[350px] aspect-video bg-cover rounded-lg bg-center shadow-lg"
             style={{
-              backgroundImage: "url('/assets/fashion-1.jpg')", // Remplacez par votre image
+              backgroundImage: "url('/assets/fashion-1.jpg')",
             }}
           ></div>
-
-          {/* Second Image */}
           <div
             className="w-full h-[200px] md:h-[300px] lg:h-[350px] aspect-video bg-cover rounded-lg bg-center shadow-lg"
             style={{
-              backgroundImage: "url('/assets/fashion-2.jpg')", // Remplacez par votre image
+              backgroundImage: "url('/assets/fashion-2.jpg')",
             }}
           ></div>
         </div>
       </div>
 
-      {/* Section 2 */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-8 md:px-16 mt-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-8 md:px-16 mt-16 animate-fade-slide-up">
         {/* Left Section: Images */}
         <div className="flex flex-col gap-6">
-          {/* First Image */}
           <div
             className="w-full h-[200px] md:h-[300px] lg:h-[350px] aspect-video bg-cover rounded-lg bg-center shadow-lg"
             style={{
-              backgroundImage: "url('/assets/fashion-3.jpg')", // Remplacez par votre image
+              backgroundImage: "url('/assets/fashion-3.jpg')",
             }}
           ></div>
-
-          {/* Second Image */}
           <div
             className="w-full h-[200px] md:h-[300px] lg:h-[350px] aspect-video bg-cover rounded-lg bg-center shadow-lg"
             style={{
-              backgroundImage: "url('/assets/fashion-4.jpg')", // Remplacez par votre image
+              backgroundImage: "url('/assets/fashion-4.jpg')",
             }}
           ></div>
         </div>
 
         {/* Right Section: Text */}
-        <div className="flex flex-col justify-center space-y-6">
+        <div className="flex flex-col justify-center space-y-6 animate-fade-slide-right">
           <h2 className="title text-primary-800 text-2xl font-semibold">
             Pourquoi choisir Image'In et Vous ?
           </h2>
@@ -102,10 +94,9 @@ export default function Fashion() {
             Prenez rendez-vous dès aujourd'hui et explorez les possibilités
             infinies de votre style personnel avec Image'In et Vous !
           </p>
-          {/* Call to Action Button */}
           <div className="mt-6">
             <Link
-              href="/contact" // Changez ce lien selon vos besoins
+              href="/contact"
               className="inline-flex items-center px-6 py-3 border-2 border-black text-black font-semibold rounded-md text-primary-800 hover:text-tercary-400 transition duration-300"
             >
               <span className="mr-2">→</span>
