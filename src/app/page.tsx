@@ -13,6 +13,7 @@ const Home: NextPage = () => {
           fill
           style={{ objectFit: "cover" }}
           quality={100}
+          unoptimized
         />
       </div>
 

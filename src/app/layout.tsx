@@ -27,7 +27,7 @@ const libreBaskerville = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
-  title: "Image' In et Vous",
+  title: "S'Habiller De Soi",
   description:
     "Avec une approche professionelle et personnalisée, nous nous engageons à vous offrir un service de colorimétrie qui dépasse vos attentes. Nos conseils sont basés sur une analyse approfondie de vos caractéristiques uniques et nous nous efforçons de rendre chaque séance aussi agréable qu'efficace.Investir dans la colorimétrie, c'est investir dans une version plus épanouie de vous-même.Allons ensemble vers les couleurs qui feront ressortir le meilleur de vous et transformez votre style en un reflet parfait de votre beauté naturelle.",
 };
