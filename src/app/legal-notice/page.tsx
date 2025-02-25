@@ -27,10 +27,10 @@ export default function LegalNotice() {
             <li>
               **Email** :{" "}
               <a
-                href="mailto:Sylvie@imaginetvous.com"
+                href="mailto:Sylvie.clerc@laposte.net"
                 className="hover:text-primary"
               >
-                Sylvie@imaginetvous.com
+                Sylvie.clerc@laposte.net
               </a>
             </li>
           </ul>

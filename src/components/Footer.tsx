@@ -82,10 +82,10 @@ export default function Footer() {
             <p>
               Email :{" "}
               <a
-                href="mailto:sylvie@imaginetvous.com"
+                href="mailto:Sylvie.clerc@laposte.net"
                 className="hover:text-tercary-200"
               >
-                sylvie@imaginetvous.com
+                Sylvie.clerc@laposte.net
               </a>
             </p>
             <div className="flex mt-4 space-x-4">

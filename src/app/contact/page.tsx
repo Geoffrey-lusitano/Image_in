@@ -38,10 +38,10 @@ export default function Contact() {
               <div>
                 <h3 className="text-lg font-medium text-primary-800">Email</h3>
                 <a
-                  href="mailto:Sylvie@imaginetvous.com"
+                  href="mailto:Sylvie.clerc@laposte.net"
                   className="text-gray-700 hover:text-tercary"
                 >
-                  Sylvie@imaginetvous.com
+                  Sylvie.clerc@laposte.net
                 </a>
               </div>
             </div>
@@ -62,7 +62,7 @@ export default function Contact() {
         </div>
         <div className="bg-white bg-opacity-90 rounded-lg shadow-2xl border border-primary-800 p-8 animate-fade-slide-right">
           <form
-            action="mailto:Sylvie@imaginetvous.com"
+            action="mailto:Sylvie.clerc@laposte.net"
             method="POST"
             encType="text/plain"
             className="space-y-6"
@@ -162,7 +162,7 @@ export default function Contact() {
             </button>
           </form>
           <div className="mt-6 text-secondary text-sm text-center">
-            Sylvie@imaginetvous.com - 06 17 87 17 45
+            Sylvie.clerc@laposte.net - 06 17 87 17 45
           </div>
         </div>
       </div>
