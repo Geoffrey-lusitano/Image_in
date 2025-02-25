@@ -9,8 +9,10 @@ export default function Footer() {
         <div className="flex flex-wrap justify-between">
           {/* Colonne 1 : Logo et description */}
           <div className="w-full lg:w-1/3 mb-6">
-            <Logo size="small" />
-            <p className="mt-4">
+            <Link href={"/"}>
+              <Logo size="small" />
+            </Link>
+            <p className="mt-4 p-2">
               Imagin'et Vous, conseillère en image en Rhône-Alpes, vous
               accompagne dans la valorisation de votre image.
             </p>

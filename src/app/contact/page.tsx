@@ -78,7 +78,8 @@ export default function Contact() {
                   name="Nom"
                   placeholder="Nom"
                   required
-                  className="w-full text-gray-700 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800  focus:text-black"
+                  autoComplete="family-name"
+                  className="w-full text-gray-700 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
                 />
               </div>
               <div>
@@ -91,7 +92,8 @@ export default function Contact() {
                   name="Prénom"
                   placeholder="Prénom"
                   required
-                  className="w-full text-gray-700 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2  focus:outline-none focus:border-primary-800 focus:text-black"
+                  autoComplete="given-name"
+                  className="w-full text-gray-700 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
                 />
               </div>
             </div>
@@ -106,6 +108,7 @@ export default function Contact() {
                   name="Téléphone"
                   placeholder="Téléphone"
                   required
+                  autoComplete="tel"
                   className="w-full text-gray-700 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
                 />
               </div>
@@ -119,6 +122,7 @@ export default function Contact() {
                   name="Ville"
                   placeholder="Ville"
                   required
+                  autoComplete="address-level2"
                   className="w-full text-gray-700 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
                 />
               </div>
@@ -133,6 +137,7 @@ export default function Contact() {
                 name="Email"
                 placeholder="Email"
                 required
+                autoComplete="email"
                 className="w-full text-gray-700 placeholder:text-secondary px-4 py-3 rounded-lg border border-primary-800 focus:ring-primary-800 focus:ring-2 focus:outline-none focus:border-primary-800 focus:text-black"
               />
             </div>

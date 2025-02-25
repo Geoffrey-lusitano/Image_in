@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="relative bg-white">
+    <section className="pt-10 relative bg-white">
       <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen lg:min-h-0 gap-6 px-6 md:px-16 py-12">
         {/* Left Section: Text */}
         <div className="flex flex-col justify-center space-y-6 animate-fade-slide-left">

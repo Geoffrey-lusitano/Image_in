@@ -68,7 +68,6 @@ export default {
       },
     },
   },
-  darkMode: "class",
   plugins: [
     function ({
       addUtilities,

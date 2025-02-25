@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.svg" />
         <link
           rel="icon"
           type="image/png"
@@ -63,9 +63,9 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${montserrat.variable} ${libreBaskerville.variable}`}
       >
-        <div className="light min-h-screen flex flex-col">
+        <div className=" min-h-screen flex flex-col">
           <Navbar />
-          <main className="flex-1 pt-24 animate-fade-slide-up">{children}</main>
+          <main className="flex-1 animate-fade-slide-up">{children}</main>
           <Footer />
         </div>
       </body>

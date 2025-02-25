@@ -18,14 +18,16 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed w-full h-24 shadow-xl text-primary-200 bg-primary-800 z-50">
+    <nav className="fixed w-full h-16 shadow-xl text-primary-200 bg-primary-800 z-50">
       <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
-        <Logo size="small" />
+        <Link href={"/"}>
+          <Logo size="very-small" />
+        </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden lg:flex tittle text-white space-x-8">
           {[
-            { href: "/", label: "Accueil" },
+            // { href: "/", label: "Accueil" },
             { href: "/about", label: "À propos" },
             { href: "/colorimetry", label: "Colorimétrie" },
             { href: "/morphology", label: "Morphologique" },
@@ -34,7 +36,7 @@ export default function Navbar() {
             { href: "/testimonial", label: "Livre d’or" },
             { href: "/contact", label: "Contact" },
           ].map((menuItem) => (
-            <li key={menuItem.href} className="group text-xl">
+            <li key={menuItem.href} className="group text-base">
               <Link
                 href={menuItem.href}
                 className="relative hover:text-tercary-200 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-tercary-200 after:transition-all after:duration-1000  after:ease-in-out group-hover:after:w-full"
@@ -88,10 +90,12 @@ export default function Navbar() {
           </div>
         </div>
         <div className="flex-col">
-          <Logo size="very-small" />
+          <Link href={"/"} onClick={closeMenu}>
+            <Logo size="very-small" />
+          </Link>
           <ul className="flex-col py-3">
             {[
-              { href: "/", label: "Accueil" },
+              // { href: "/", label: "Accueil" },
               { href: "/about", label: "À propos" },
               { href: "/colorimetry", label: "Colorimétrie" },
               { href: "/morphology", label: "Morphologique" },
